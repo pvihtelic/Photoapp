@@ -1,0 +1,12 @@
+<%= form_for @picture do |picture| %>
+
+	<%= picture.label :url, "URL:" %>
+	<%= picture.text_field :url, :size=>75 %>
+
+	<%= picture.label :title, "Title:" %>
+	<%= picture.text_field :title, :size=>75 %>	
+
+	<%= picture.submit %>
+	<%= link_to "Back", pictures_url %>	
+
+<% end %>
